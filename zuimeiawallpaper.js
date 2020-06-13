@@ -44,7 +44,14 @@ function task() {
 
       await image();
 
-      console.log(a);
+      fs.writeFile('./images/daily/imglist', JSON.stringify(a)+`,
+`,{'flag':'a'}, err=>{
+            if(err){
+                throw err
+            }else{
+                console.log("success")
+            }
+        })
 
       updataImg(a.thumb,a.time+"  " +a.title)
 
