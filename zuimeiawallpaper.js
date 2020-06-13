@@ -1,5 +1,5 @@
 const updataImg = require('./updataImg');
-
+const fs = require("fs");
 const axios = require("axios");
 
 function image() {
