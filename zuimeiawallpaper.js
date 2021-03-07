@@ -1,6 +1,8 @@
 const updataImg = require('./updataImg');
 const fs = require("fs");
 const axios = require("axios");
+const chatid = process.env.chatid;
+const botapi = process.env.botapi;
 
 function image() {
 
