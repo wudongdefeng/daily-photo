@@ -41,6 +41,9 @@ jobs:
               run: npm install
 
             - run: node zuimeiawallpaper.js
+              env:
+                  botapi: ${{ secrets.botapi }}
+                  chatid: ${{ secrets.chatid }}
 
             - name: Upload to this repo
 
