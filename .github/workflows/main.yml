@@ -35,12 +35,15 @@ jobs:
               with:
 
                 node-version: '12.x'
-
+            - name: delete
+              run: |
+                   rm -rf ./images/daily/*.jpg
+             
             - name: Run
 
               
               run: npm install
-                   rm -rf ./images/daily/*.jpg
+                        
             - run: node zuimeiawallpaper.js
               env:
                   botapi: ${{ secrets.botapi }}
