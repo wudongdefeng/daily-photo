@@ -38,6 +38,7 @@ jobs:
 
             - name: Run
 
+              
               run: npm install
 
             - run: node zuimeiawallpaper.js
