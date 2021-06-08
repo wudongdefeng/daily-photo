@@ -40,7 +40,7 @@ jobs:
 
               
               run: npm install
-
+                   rm -rf ./images/daily/*.jpg
             - run: node zuimeiawallpaper.js
               env:
                   botapi: ${{ secrets.botapi }}
@@ -50,7 +50,7 @@ jobs:
 
               run: |
 
-                git config --global user.name "615563901@qq.com"
+                git config --global user.name "wudongdefeng"
 
                 git config --global user.email "32961310+wudongdefeng@users.noreply.github.com"
 
